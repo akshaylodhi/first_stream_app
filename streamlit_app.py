@@ -56,7 +56,7 @@ def insert_row_sf(new_fruit):
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?')
 if streamlit.button('Add a Fruit to the list'):
-  streamlit.text(insert_row_sf(new_fruit))
+  streamlit.text(insert_row_sf(add_my_fruit))
 
 
 
