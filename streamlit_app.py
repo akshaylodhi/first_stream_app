@@ -54,7 +54,7 @@ def insert_row_sf(new_fruit):
   my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('"+new_fruit+"')")
   return "Thanks for adding "+new_fruit
 
-add_my_fruit = stream.text_input('What fruit would you like to add?')
+add_my_fruit = streamlit.text_input('What fruit would you like to add?')
 if streamlit.button('Add a Fruit to the list'):
   streamlit.text(insert_row_sf(new_fruit))
 
